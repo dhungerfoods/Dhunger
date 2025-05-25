@@ -1,0 +1,39 @@
+---
+const { title = 'Dhunger' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+      }
+      header {
+        background: #ff5a5f;
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      main {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dhunger</h1>
+      <p>Craving ends here – Delicious food made fresh.</p>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
